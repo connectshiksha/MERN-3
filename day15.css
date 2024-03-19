@@ -1,5 +1,5 @@
-body{
-    height: 1200vh;
+body {
+  height: 1200vh;
 }
 
 .container {
@@ -37,22 +37,27 @@ body{
 
     sticky
     */
-    
 }
 .box1 {
   background-color: aquamarine;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 4;
 }
 .box2 {
   background-color: orange;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
 }
 .container .box3 {
   background-color: red;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
 
   /* display: none; */
   /* visibility: hidden; */
@@ -60,8 +65,9 @@ body{
 .box4 {
   background-color: blue;
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 30px;
+  top: 30px;
+  z-index: 1;
   /* right: 220px;
   top: 200px; */
 }
@@ -76,7 +82,6 @@ h1 {
   left: 0;
   top: 10%;
   transform: rotate(90deg);
-
 }
 span {
   border: 2px solid red;

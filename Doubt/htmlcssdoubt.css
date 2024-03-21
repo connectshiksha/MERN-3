@@ -1,0 +1,49 @@
+body {
+  background-color: blanchedalmond;
+  position: relative;
+  height: 100vh;
+}
+.container {
+  background-color: rgb(255, 174, 174);
+  border: 2px solid green;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-image: url(/Images/computer.jpg);
+  background-size: cover;
+ 
+}
+.icon-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.container1{
+   position: fixed;
+  right: 0;
+}
+.container2{
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+}
+.container div {
+  /* border: 2px solid; */
+  height: 100px;
+  width: 100px;
+
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.584) 15%,
+    rgba(185, 185, 249, 0.722) 50%
+  );
+}
+
+/* 
+margin
+border
+padding
+box-size
+
+*/

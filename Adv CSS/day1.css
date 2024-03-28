@@ -1,0 +1,69 @@
+.parent {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction:row;
+  /* 
+  row
+  column
+  row-reverse
+  column-reverse
+  */
+  height: 350px;
+  width: 100%;
+  border: 3px solid;
+  /* gap: 20px; */
+  /*
+  horizontal alignment
+
+  justify-content:
+
+  start(default)
+  center
+  end
+  space-between
+  space-around
+  space-evenly
+  */
+
+  /* 
+   vertical alignment
+
+  align-items:
+
+  start
+  end
+  center
+
+
+  align-content:
+
+  space-between
+  space-around
+  space-evenly
+
+  */
+}
+
+.child {
+  border: 2px solid red;
+  width: 100%;
+  height: 100px;
+
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .box1{
+    flex-basis: 100px;
+}
+.box2{
+    flex-basis: 200px;
+}
+.box3{
+    flex-basis: 300px;
+} */

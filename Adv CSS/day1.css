@@ -1,10 +1,11 @@
 .parent {
   background-color: beige;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-content: end;
+  align-items: start;
+  /* flex-flow: column nowrap; */
   /* flex-wrap: wrap; */
-  flex-direction:row;
+  flex-direction: row-reverse;
   /* 
   row
   column
@@ -29,7 +30,7 @@
   */
 
   /* 
-   vertical alignment
+  vertical alignment
 
   align-items:
 
@@ -49,21 +50,62 @@
 
 .child {
   border: 2px solid red;
-  width: 100%;
+  width: 100px;
   height: 100px;
-
   background-color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-grow: 1; */
 }
 
-/* .box1{
-    flex-basis: 100px;
+.box1 {
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 8;  */
+  align-self: flex-start;
+
 }
-.box2{
-    flex-basis: 200px;
+.box2 {
+  /* order: 1; */
+  /* flex-grow: 5; */
+  /* flex-shrink: 8;  */
+  align-self: center;
+
 }
-.box3{
-    flex-basis: 300px;
-} */
+.box3 {
+  /* order: 2; */
+  /* flex-grow: 8; */
+  /* flex-shrink: 8;  */
+  /* flex-basis:100rem; */
+  /* width: 200rem; */
+  background-color: aqua;
+  align-self: flex-end;
+}
+
+/* 
+
+parent: 
+
+display flex
+justify-content
+6
+align-content
+3
+align-items
+3
+flex-wrap
+flex-direction
+flow -> flex-direction and flex-wrap
+*/
+/* 
+
+child:
+
+order 
+grow
+shrink
+basis
+align self
+
+*/

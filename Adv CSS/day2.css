@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  border: 2px solid red;
+  align-items: center;
+  /* flex-direction: row; */
+}
+.box-1 {
+  align-items: flex-start;
+}
+/* p {
+  color: green;
+} */
+/* ul {
+  display: flex;
+  gap: 20px;
+} */

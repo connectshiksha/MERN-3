@@ -1,0 +1,33 @@
+.container {
+  background-color: aqua;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 2fr 4fr 4fr 2fr;
+  gap: 20px;
+  padding: 10px;
+  grid-template-areas:
+    "b1 b1"
+    "b2 b3"
+    "b2 b4"
+    "b5 b5";
+}
+.container > * {
+  border: 2px solid red;
+  background-color: rgb(217, 248, 195);
+}
+.box1 {
+  grid-area: b1;
+}
+.box2 {
+  grid-area: b2;
+}
+.box3 {
+  grid-area: b3;
+}
+.box4 {
+  grid-area: b4;
+}
+.box5 {
+  grid-area: b5;
+}

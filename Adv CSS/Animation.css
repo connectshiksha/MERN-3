@@ -14,7 +14,6 @@
   /* transform: skewX(10deg); */
 }
 
-
 .box:hover {
   /* 
     translate
@@ -23,7 +22,7 @@
     scale
     matrix
      */
-     /* transform: translateY(-10px); */
+  /* transform: translateY(-10px); */
   /* transform:translate(50px,50px) ; */
   /* transform: rotate(-30deg); */
   /* transform: skew(30deg, 30deg); */
@@ -31,5 +30,4 @@
   /* transform: matrix(1, 0.3, 0, 1, 1, 1); */
   /* transform: rotateZ(30deg); */
   /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
-
 }

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --main-color: #10f2b2;
+    --fs-main : 20px;
+    --border-globe : 2px solid red;
+    /* --flex-center : flex center center; */
+}
+
+p {
+  /* column-count: 2;
+    text-align: justify;
+    column-gap: 20px;
+    column-rule: 2px solid red; */
+  /* column-width: 100px; */
+  color: var(--main-color);
+  border: 2px solid;
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  overflow-y: scroll;
+  resize: both;
+  font-size: var(--fs-main);
+  /* overflow-y: hidden;
+    overflow-x: scroll; */
+}
+/* * {
+  color: blue;
+} */
+h1 {
+  color: var(--main-color);
+  font-size: var(--fs-main);
+  border: var(--border-globe);
+}
+/* .head-class {
+  color: green !important;
+} */
+/* #head-id {
+  color: pink;
+} */
+/* 
+universal (*) = 0
+tag / element name (h1) = 1
+class name = 10
+id name = 100
+inline css = 1000
+important 1000
+
+
+*/
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  display: none;
+}

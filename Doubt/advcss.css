@@ -1,0 +1,87 @@
+/* flex */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+/* flex start */
+.main {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+}
+.menu-section {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    li {
+      background-color: yellow;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+/* flex end */
+
+/* Grid start */
+.hero {
+  background-color: aquamarine;
+  height: 50%;
+  display: grid;
+  /* 12fr */
+  grid-template-columns: 8fr 4fr;
+  grid-template-rows: 6fr 6fr;
+  gap: 10px;
+  grid-template-areas:
+    "banner p1"
+    "banner p2";
+  > * {
+    border: 2px solid red;
+  }
+}
+
+.banner {
+  grid-area: banner;
+  background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  > * {
+    background-color: orange;
+    /* width: fit-content; */
+  }
+}
+.price1 {
+  grid-area: p1;
+}
+.price2 {
+  grid-area: p2;
+}
+
+/* image object fit hover */
+img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    transition: linear .5s;
+}
+img:hover{
+transform: translateY(-10px);
+}

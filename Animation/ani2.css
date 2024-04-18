@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(31, 35, 35);
+  width: 100vw;
+  height: 100vh;
+  /* center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* static animation css start */
+.btn {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid red;
+  transition: all ease-in 0.3s;
+  border-radius: 5px;
+  position: relative;
+}
+.btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 5px 1px orange;
+}
+.btn::before {
+  content: "";
+  width: 0%;
+  height: 0%;
+  background-color: darkslateblue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all linear 0.5s;
+}
+.btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
+/* static animation css end */
+
+/* dynamic animation css start */
+
+.box {
+  width: 300px;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 56, 56);
+  position: relative;
+  overflow: hidden;
+
+}
+.box h1 {
+  z-index: 11;
+}
+.box::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation-timing-function: all ease 0.5s;
+  animation: borderspin 3s infinite;
+
+  background-image: linear-gradient(red, green, yellow);
+}
+.box::after {
+  content: "";
+  width: 290px;
+  background-color: rgb(50, 56, 56);
+  position: absolute;
+  inset: 5px;
+}
+
+@keyframes borderspin {
+  0%,100% {
+   top: 0%;
+   left: 0%;
+  }
+  25% {
+   top: 0%;
+   left: 90%;
+  }
+  50% {
+   top: 90%;
+   left: 90%;
+  }
+  75% {
+   top: 90%;
+   left: 0%;
+  }
+  
+ 
+}
+/* dynamic animation css end */
